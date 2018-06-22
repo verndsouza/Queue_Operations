@@ -126,39 +126,39 @@ public class Queue {
 	public static void main(String[] args) {
 		Queue Q = new Queue();
 		
-				int choice = 0 ;
-				sc = new Scanner(System.in);
-				do {
-					
-				
-				System.out.println("Choose: 1. Enqueue 2. Dequeue 3. Empty 4. View 5. End");
-				choice = sc.nextInt();
-				if(choice == 1)
-				{
-					sc = new Scanner(System.in);
-					System.out.println("Enter Name: ");
-					String name=sc.nextLine();
-					System.out.println("Enter Priority: ");
-					int priority=sc.nextInt();
-					
-					Q.enqueue(name,priority);
-				}
-				else if(choice == 2)
-				{
-					System.out.println(Q.deQueue());
-					
-					
-				}
-				else if(choice == 3){
-					System.out.println(Q.isEmpty());
-				}
-				else if(choice == 4)
-				{
-					System.out.println(Q);
-					
-				}
-				}
-				while(choice!=5);
+		int choice = 0 ;
+		sc = new Scanner(System.in);
+		do {
+
+
+		System.out.println("Choose: 1. Enqueue 2. Dequeue 3. Empty 4. View 5. End");
+		choice = sc.nextInt();
+		if(choice == 1)
+		{
+			sc = new Scanner(System.in);
+			System.out.println("Enter Name: ");
+			String name=sc.nextLine();
+			System.out.println("Enter Priority: ");
+			int priority=sc.nextInt();
+
+			Q.enqueue(name,priority);
+		}
+		else if(choice == 2)
+		{
+			System.out.println(Q.deQueue());
+
+
+		}
+		else if(choice == 3){
+			System.out.println(Q.isEmpty());
+		}
+		else if(choice == 4)
+		{
+			System.out.println(Q);
+
+		}
+		}
+		while(choice!=5);
 
 	}
 
